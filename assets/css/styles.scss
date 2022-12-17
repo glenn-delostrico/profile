@@ -605,11 +605,11 @@ body {
                 background: none;
                 text-align: center;
                 h3 {
-                    font-size: 40px;
+                    font-size: 1.3rem;
                     position: absolute;
                     top: 1rem;
-                    visibility: hidden;
-                    opacity: 0;
+                    visibility: visible;
+                    opacity: 1;
                 }
                 a {
                     display: inline-block;
@@ -624,6 +624,10 @@ body {
                 }
             }
         }
+        .row .col:hover .hidden {
+            visibility: visible;
+            opacity: 1;
+        }
         .row .col:hover .overlay {
             z-index: -99;
         }
@@ -633,10 +637,6 @@ body {
         .row .col:hover a {
             padding: 2rem;
             transition: all .3s ease-in-out;
-            visibility: visible;
-            opacity: 1;
-        }
-        .row .col:hover h3 {
             visibility: visible;
             opacity: 1;
         }

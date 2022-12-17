@@ -582,11 +582,11 @@ body {
   text-align: center;
 }
 .main #portfolio .row .col .hidden h3 {
-  font-size: 40px;
+  font-size: 1.3rem;
   position: absolute;
   top: 1rem;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
 }
 .main #portfolio .row .col .hidden a {
   display: inline-block;
@@ -599,6 +599,10 @@ body {
   visibility: hidden;
   opacity: 0;
 }
+.main #portfolio .row .col:hover .hidden {
+  visibility: visible;
+  opacity: 1;
+}
 .main #portfolio .row .col:hover .overlay {
   z-index: -99;
 }
@@ -608,10 +612,6 @@ body {
 .main #portfolio .row .col:hover a {
   padding: 2rem;
   transition: all 0.3s ease-in-out;
-  visibility: visible;
-  opacity: 1;
-}
-.main #portfolio .row .col:hover h3 {
   visibility: visible;
   opacity: 1;
 }
