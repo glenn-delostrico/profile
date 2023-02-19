@@ -221,19 +221,14 @@ body {
 }
 .header #hero .clipped:nth-child(2) {
   margin-top: 2rem;
-  -webkit-animation-name: load-glow;
-          animation-name: load-glow;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-name: load-glow;
+  animation-duration: 1s;
 }
 .header #hero .clipped:nth-child(3) {
   margin-bottom: 3rem;
-  -webkit-animation-name: load-glow;
-          animation-name: load-glow;
-  -webkit-animation-duration: 1.3s;
-          animation-duration: 1.3s;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  animation-name: load-glow;
+  animation-duration: 1.3s;
+  animation-delay: 1.3s;
 }
 .header #hero .clipped:hover {
   color: #b7020b;
@@ -728,13 +723,6 @@ body {
   position: relative;
 }
 
-@-webkit-keyframes type {
-  from {
-    width: 0;
-    visibility: visible;
-  }
-}
-
 @keyframes type {
   from {
     width: 0;
@@ -754,26 +742,20 @@ body {
 
 .bounce span {
   display: inline-block;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
 .bounce span:hover {
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   transition: color 0.3s linear;
   color: #b7020b;
 }
 
 .bouncing {
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
+  animation-name: bounce;
 }
 
 .bounceLoad span {
@@ -783,44 +765,7 @@ body {
   text-transform: uppercase;
   display: inline-block;
   position: relative;
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-}
-
-@-webkit-keyframes glow {
-  0% {
-    transform: scaleX(1);
-  }
-  20% {
-    transform: scaleX(1.1);
-  }
-  30% {
-    transform: scaleX(1.2);
-  }
-  60% {
-    transform: scaleX(1.3);
-  }
-  80% {
-    transform: scaleX(1.1);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-  0% {
-    box-shadow: 0 0 10px #92cd00, 0 0 20px #92cd00, 0 0 40px #92cd00, 0 0 80px #92cd00, 0 0 160px #92cd00;
-  }
-  30% {
-    box-shadow: 0 0 10px green, 10px 0 30px #92cd00, 10px 0 50px #92cd00, 0 0 80px #92cd00, 10px 0 160px #92cd00;
-  }
-  50% {
-    box-shadow: 0 0 10px yellowgreen 0 10px 30px #92cd00, 0 0 40px #92cd00, 10px 0 80px #92cd00, 0 10px 160px #92cd00;
-  }
-  70% {
-    box-shadow: 0 0 10px green, 0 10px 30px #92cd00, 0 10px 50px #92cd00, 20px 0 80px #92cd00, 10px 0 160px #92cd00;
-  }
-  100% {
-    box-shadow: 0 0 10px #92cd00, 0 0 20px #92cd00, 0 0 40px #92cd00, 10px 0 80px #92cd00, 0 0 160px #92cd00;
-  }
+  animation-name: bounce;
 }
 
 @keyframes glow {
@@ -858,20 +803,6 @@ body {
     box-shadow: 0 0 10px #92cd00, 0 0 20px #92cd00, 0 0 40px #92cd00, 10px 0 80px #92cd00, 0 0 160px #92cd00;
   }
 }
-@-webkit-keyframes bounce {
-  20%, 50%, 80%, to {
-    transform: scale(2);
-  }
-  40%, 45% {
-    transform: scale(2, 1);
-  }
-  60% {
-    transform: scale(1.75, 0.65);
-  }
-  90% {
-    transform: scale(1.15, 0.85);
-  }
-}
 @keyframes bounce {
   20%, 50%, 80%, to {
     transform: scale(2);
@@ -899,18 +830,6 @@ body {
   transition: all 1s linear;
 }
 
-@-webkit-keyframes text-appear {
-  0% {
-    width: 100%;
-  }
-  50% {
-    width: 50%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-
 @keyframes text-appear {
   0% {
     width: 100%;
@@ -920,16 +839,6 @@ body {
   }
   100% {
     width: 0%;
-  }
-}
-@-webkit-keyframes load-glow {
-  100% {
-    color: #b7020b;
-    -webkit-text-stroke: 1px #b7020b;
-    text-shadow: 0 0 10px #92cd00, 0 0 20px #92cd00, 0 0 40px #92cd00, 0 0 80px #92cd00, 0 0 160px #92cd00;
-  }
-  0% {
-    color: none;
   }
 }
 @keyframes load-glow {
